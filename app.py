@@ -13,9 +13,8 @@ CORS(app)
 PRIMARY_MODEL = "openai/gpt-oss-20b:free"
 FALLBACK_MODEL = "mistralai/mistral-7b-instruct:free"
 
-PRIMARY_API_KEY = "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"
-FALLBACK_API_KEY = "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"
-
+PRIMARY_API_KEY = os.getenv("PRIMARY_API_KEY")
+FALLBACK_API_KEY = os.getenv("FALLBACK_API_KEY")
 # ======================================================
 # 🧩 Utility: Call OpenRouter API
 # ======================================================
